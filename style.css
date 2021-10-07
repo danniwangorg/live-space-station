@@ -1,0 +1,291 @@
+* {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    width: 90%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+footer {
+    width: 90%;
+    margin-left: 115px;
+    padding-bottom: 2em;
+}
+
+#section_map,
+#section_vol,
+#section_faq {
+    padding-top: 8px;
+}
+
+#canvasForHTML {
+    width: 90%;
+    height: 515px;
+    display: block;
+    margin-left: 115px;
+    margin-right: 115px;
+}
+
+h1 {
+    font-size: 1.75em;
+    font-weight: 500;
+    margin-top: 35px;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+h4 {
+    font-size: 0.875em;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+h6 {
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: 1em;
+    margin-bottom: 0;
+    line-height: 25px;
+}
+
+p {
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: 15px;
+    margin-bottom: 0;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.anchor {
+    display: block;
+    height: 115px;
+    margin-top: -115px;
+    visibility: hidden;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(70, 117, 210, 0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 1.25em;
+    color: #c0c0c0;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: left;
+    margin-top: -15px;
+    margin-left: 30px;
+    line-height: 40px;
+}
+
+.menubar {
+    font-size: 32px;
+    padding: 30px 45px;
+    cursor: pointer;
+    position: fixed;
+}
+
+.description {
+    width: 90%;
+    margin-left: 115px;
+}
+
+.solid {
+    margin-top: 12px;
+}
+
+.map {
+    width: 90%;
+    margin-left: 115px;
+}
+
+.image {
+    width: 100%;
+}
+
+.buttonbox {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.button {
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0 10px;
+    padding-left: 9px;
+    padding-bottom: 2px;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgba(173, 194, 235);
+}
+
+.databox {
+    width: 100%;
+    text-align: center;
+    margin-left: 115px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.databox .data {
+    width: 30%;
+}
+
+.sound {
+    width: 90%;
+    margin-left: 115px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.faq {
+    width: 90%;
+    margin-left: 115px;
+    padding-bottom: 2em;
+}
+
+@media (max-width: 600px) {
+    header {
+        display: inline-block;
+        width: 483px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    footer {
+        width: 483px;
+        margin: 0;
+        text-align: center;
+    }
+    #canvasForHTML {
+        margin: 0;
+        width: 483px;
+        height: 300px;
+    }
+    h1 {
+        margin: 0;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    h5 {
+        margin-top: 2.5em;
+    }
+    h6 {
+        margin-bottom: 0;
+    }
+    .blank {
+        margin: 0
+    }
+    .overlay {
+        background-color: rgba(70, 117, 210, 0.85);
+    }
+    .overlay .closebtn {
+        top: 16px;
+        right: 45px;
+    }
+    .content {
+        text-align: center;
+        margin-top: 105px;
+        margin-left: 0;
+        line-height: 30px;
+    }
+    .menubar {
+        position: relative;
+    }
+    .description {
+        width: 483px;
+        margin: 0;
+        text-align: center;
+    }
+    .map {
+        width: 483px;
+        margin: 0;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+    .buttonbox {
+        padding-top: 15px;
+    }
+    .button {
+        margin: 0 5px;
+    }
+    .databox {
+        width: 483px;
+        margin: 0;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .databox .data {
+        width: 483px;
+        margin: 0;
+    }
+    .sound {
+        width: 483px;
+        margin: 0;
+        padding-top: 15px;
+        padding-bottom: 40px;
+    }
+    .faq {
+        width: 483px;
+        margin: 0;
+        text-align: center;
+        padding-bottom: 2em;
+    }
+}

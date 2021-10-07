@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Space Station</title>
+    <link rel="shortcut icon" type="svg" href="./assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <nav class="overlay" id="myNav">
+        <a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
+        <div class="content">
+            <a href="#section_home">Home</a>
+            <a href="#section_map">Space Station Tracker</a>
+            <a href="#section_vol">Cosmos Soundscape</a>
+            <a href="#section_faq">FAQ</a>
+        </div>
+    </nav>
+
+    <header>
+        <span class="menubar" id="openNav">&#9776;</span>
+    </header>
+
+    <section class="map">
+        <span class="anchor" id="section_home"></span>
+        <h1>Live Space Station</h1>
+        <hr class="solid">
+        <p>We find ourselves suspended in a vast cosmos. The dark overlay indicates where it is nighttime in the world.</p>
+        <img class="image" id="theMap" alt="map" src="./assets/001.png" /></a>
+        <div class="buttonbox">
+            <button class="button" id="zoomOut">➖</button>
+            <button class="button" id="zoomIn">➕</button>
+        </div>
+    </section>
+
+    <section class="description" id="section_map">
+        <h1>Space Station Tracker</h1>
+        <hr class="solid">
+        <p>The tracker shows where the International Space Station is right now.</p>
+    </section>
+
+    <section>
+        <div id="canvasForHTML"></div>
+    </section>
+
+    <section class="databox">
+        <div class="data">
+            <h2>Latitude</h2>
+            <h3 id="latitudeISS"></h3>
+        </div>
+        <div class="data">
+            <h2>Longitude</h2>
+            <h3 id="longitudeISS"></h3>
+        </div>
+        <div class="data">
+            <h2>Time</h2>
+            <h3 id="timestampISS"></h3>
+        </div>
+    </section>
+
+    <section class="description" id="section_vol">
+        <h1>Cosmos Soundscape</h1>
+        <hr class="solid">
+        <p>Click to listen to the scintillating sound from the universe.</p>
+        <img class="image" alt="view" src="./assets/cosmos.png" />
+    </section>
+
+    <section class="sound">
+        <audio controls>
+            <source src="./assets/cosmos.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+    <section class="faq" id="section_faq">
+        <h1>FAQ</h1>
+        <hr class="solid">
+        <h5>Why is the space station up there?</h5>
+        <h6>The space station is Earth's only microgravity laboratory. This football field-sized platform hosts a plethora of science and technology experiments that are continuously being conducted by crew members, or are automated. Research aboard the orbiting
+            laboratory holds benefits for life back on Earth, as well as for future space exploration. The space station serves as a testbed for technologies and allows us to study the impacts of long-term spaceflight to humans, supporting NASA's mission
+            to push human presence farther into space.</h6>
+        <h5>How often can I expect to see the space station?</h5>
+        <h6>The ISS is visible because it reflects the light of the Sun - the same reason we can see the Moon. However, unlike the Moon, the space station isn't bright enough to see during the day. It can only be seen when it is dawn or dusk at your location.
+            As such, it can range from one sighting opportunity a month to several a week, since it has to be both dark where you are, and the space station has to happen to be going overhead.</h6>
+        <h5>How fast is the space station travelling?</h5>
+        <h6>The ISS circles the Earth every 90 minutes. It travels at about 17,500 miles (28,000 km) per hour, which gives the crew 16 sunrises and sunsets every day. In the more than 15 years that people have been living onboard, the Station has circumnavigated
+            the Earth tens of thousands of times.</h6>
+        <h5>Does the station appear and then disappear because of the light of the Moon?</h5>
+        <h6>The space station is visible because it is reflecting light from the Sun. This is the same reason that the Moon appears to shine. Even when the Moon hasn't risen, you'll still be able to see the space station.</h6>
+    </section>
+
+    <footer>
+        <hr class="solid">
+        <h4>© 2021 danniwang</h4>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin=“anonymous”></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
